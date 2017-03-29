@@ -37,12 +37,12 @@ namespace EEPrep
             username = unameTextbox.Text;
             password = pWordTextbox.Text;
 
-            string queryString = "SELECT* FROM Login WHERE Username = ' " + unameTextbox.Text + " ' and " +
+            string queryString = "SELECT* FROM Administration WHERE Username = ' " + unameTextbox.Text + " ' and " +
                                             " Password = '" + pWordTextbox + "'";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
-                connection.Open();
+                command.Connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 try
                 {
