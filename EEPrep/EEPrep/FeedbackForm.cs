@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace EEPrep
 {
-    public partial class QuestionForm : Form
+    public partial class FeedbackForm : Form
     {
-        public QuestionForm()
+        public FeedbackForm()
         {
             InitializeComponent();
-        }
-
-        private void nextButton_Click(object sender, EventArgs e)
-        {
-            FeedbackForm summary = new FeedbackForm();
-            summary.Show();
         }
     }
 }

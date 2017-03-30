@@ -30,19 +30,21 @@ namespace EEPrep
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=104.131.28.50/phpmyadmin; " +
-                                    "Initial Catalog=Exam_Questions;User ID=admin;Password=arc3";
-
-           
+            string connectionString = 
+                /*"Server = rephie0000.db.11668264.hostedresource.com;" + "Database = rephie0000;" + 
+                            "Uid = rephie0000;" + "Pwd = E5th3rdb@w0rk";*/
+            "Data Source=Reph; " +
+                                "Initial Catalog=ExamQuestions;User ID=root;Password=bre@d&Chee3e";
             username = unameTextbox.Text;
             password = pWordTextbox.Text;
 
-            string queryString = "SELECT* FROM Administration WHERE Username = ' " + unameTextbox.Text + " ' and " +
+            string queryString = "SELECT* FROM Login WHERE Username = ' " + unameTextbox.Text + " ' and " +
                                             " Password = '" + pWordTextbox + "'";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
+                MessageBox.Show("working");
                 SqlDataReader reader = command.ExecuteReader();
                 try
                 {

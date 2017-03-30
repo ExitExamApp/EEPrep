@@ -52,68 +52,68 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(183, 114);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(463, 157);
+            this.pictureBox1.Size = new System.Drawing.Size(421, 123);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // OptionButton1
             // 
             this.OptionButton1.AutoSize = true;
-            this.OptionButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OptionButton1.Location = new System.Drawing.Point(183, 308);
+            this.OptionButton1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OptionButton1.Location = new System.Drawing.Point(236, 258);
             this.OptionButton1.Name = "OptionButton1";
-            this.OptionButton1.Size = new System.Drawing.Size(116, 19);
+            this.OptionButton1.Size = new System.Drawing.Size(37, 22);
             this.OptionButton1.TabIndex = 2;
             this.OptionButton1.TabStop = true;
-            this.OptionButton1.Text = "OptionButton1";
+            this.OptionButton1.Text = "A";
             this.OptionButton1.UseVisualStyleBackColor = true;
             // 
             // OptionButton2
             // 
             this.OptionButton2.AutoSize = true;
-            this.OptionButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OptionButton2.Location = new System.Drawing.Point(183, 341);
+            this.OptionButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OptionButton2.Location = new System.Drawing.Point(236, 295);
             this.OptionButton2.Name = "OptionButton2";
-            this.OptionButton2.Size = new System.Drawing.Size(116, 19);
+            this.OptionButton2.Size = new System.Drawing.Size(37, 22);
             this.OptionButton2.TabIndex = 3;
             this.OptionButton2.TabStop = true;
-            this.OptionButton2.Text = "OptionButton2";
+            this.OptionButton2.Text = "B";
             this.OptionButton2.UseVisualStyleBackColor = true;
             // 
             // OptionButton3
             // 
             this.OptionButton3.AutoSize = true;
-            this.OptionButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OptionButton3.Location = new System.Drawing.Point(183, 379);
+            this.OptionButton3.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OptionButton3.Location = new System.Drawing.Point(236, 333);
             this.OptionButton3.Name = "OptionButton3";
-            this.OptionButton3.Size = new System.Drawing.Size(116, 19);
+            this.OptionButton3.Size = new System.Drawing.Size(37, 22);
             this.OptionButton3.TabIndex = 4;
             this.OptionButton3.TabStop = true;
-            this.OptionButton3.Text = "OptionButton3";
+            this.OptionButton3.Text = "C";
             this.OptionButton3.UseVisualStyleBackColor = true;
             // 
             // OptionButton4
             // 
             this.OptionButton4.AutoSize = true;
-            this.OptionButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OptionButton4.Location = new System.Drawing.Point(183, 415);
+            this.OptionButton4.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OptionButton4.Location = new System.Drawing.Point(236, 373);
             this.OptionButton4.Name = "OptionButton4";
-            this.OptionButton4.Size = new System.Drawing.Size(116, 19);
+            this.OptionButton4.Size = new System.Drawing.Size(38, 22);
             this.OptionButton4.TabIndex = 5;
             this.OptionButton4.TabStop = true;
-            this.OptionButton4.Text = "OptionButton4";
+            this.OptionButton4.Text = "D";
             this.OptionButton4.UseVisualStyleBackColor = true;
             // 
             // OptionButton5
             // 
             this.OptionButton5.AutoSize = true;
-            this.OptionButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OptionButton5.Location = new System.Drawing.Point(183, 451);
+            this.OptionButton5.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OptionButton5.Location = new System.Drawing.Point(236, 412);
             this.OptionButton5.Name = "OptionButton5";
-            this.OptionButton5.Size = new System.Drawing.Size(116, 19);
+            this.OptionButton5.Size = new System.Drawing.Size(37, 22);
             this.OptionButton5.TabIndex = 6;
             this.OptionButton5.TabStop = true;
-            this.OptionButton5.Text = "OptionButton5";
+            this.OptionButton5.Text = "E";
             this.OptionButton5.UseVisualStyleBackColor = true;
             // 
             // textBox1
@@ -122,6 +122,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(23, 20);
             this.textBox1.TabIndex = 7;
+            this.textBox1.Visible = false;
             // 
             // nextButton
             // 
@@ -133,8 +134,9 @@
             this.nextButton.TabIndex = 8;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = false;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
-            // Question
+            // QuestionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,7 +151,7 @@
             this.Controls.Add(this.OptionButton1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.QuestionTextBox);
-            this.Name = "Question";
+            this.Name = "QuestionForm";
             this.Text = "Question";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

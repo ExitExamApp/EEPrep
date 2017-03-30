@@ -45,3 +45,5 @@ C:\Users\Esther\Documents\Visual Studio 2015\Projects\EEPrep\EEPrep\obj\Debug\EE
 C:\Users\Esther\Documents\Visual Studio 2015\Projects\EEPrep\EEPrep\obj\Debug\EEPrep.Properties.Resources.resources
 C:\Users\Esther\Documents\Visual Studio 2015\Projects\EEPrep\EEPrep\obj\Debug\EEPrep.WelcomingScreen.resources
 C:\Users\Esther\Documents\Visual Studio 2015\Projects\EEPrep\EEPrep\obj\Debug\EEPrep.csproj.GenerateResource.Cache
+C:\Users\Esther\documents\visual studio 2015\Projects\EEPrep\EEPrep\obj\Debug\EEPrep.FeedbackForm.resources
+C:\Users\Esther\documents\visual studio 2015\Projects\EEPrep\EEPrep\obj\Debug\EEPrep.About_Screen.resources

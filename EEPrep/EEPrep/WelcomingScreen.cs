@@ -36,6 +36,10 @@ namespace EEPrep
             AdminLogin.Show();
         }
 
-       
+        private void aboutButton_Click(object sender, EventArgs e)
+        {
+            About_Screen about = new About_Screen();
+            about.Show();
+        }
     }
 }

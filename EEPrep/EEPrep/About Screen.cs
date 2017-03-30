@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace EEPrep
 {
-    public partial class QuestionForm : Form
+    public partial class About_Screen : Form
     {
-        public QuestionForm()
+        public About_Screen()
         {
             InitializeComponent();
         }
 
-        private void nextButton_Click(object sender, EventArgs e)
+        private void About_Screen_Load(object sender, EventArgs e)
         {
-            FeedbackForm summary = new FeedbackForm();
-            summary.Show();
+
         }
     }
 }

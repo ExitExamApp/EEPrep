@@ -30,5 +30,13 @@ namespace EEPrep
         {
             return login;
         }
+
+        private void StuLoginNextButton_Click(object sender, EventArgs e)
+        {
+            FeedbackForm summary = new FeedbackForm();
+            summary.Show();
+            //CategoryForm options = new CategoryForm();
+            //options.Show();
+        }
     }
 }

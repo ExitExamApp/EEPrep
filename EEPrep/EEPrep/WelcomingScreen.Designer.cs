@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.WelcomingLabel = new System.Windows.Forms.Label();
-            this.WelcomingPictureBox = new System.Windows.Forms.PictureBox();
             this.WelcomingLabel2 = new System.Windows.Forms.Label();
             this.StudentButton = new System.Windows.Forms.Button();
-            this.AdminButton = new System.Windows.Forms.Button();
             this.aboutButton = new System.Windows.Forms.Button();
+            this.WelcomingPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.WelcomingPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,16 +46,6 @@
             this.WelcomingLabel.TabIndex = 1;
             this.WelcomingLabel.Text = "Welcome To Your";
             this.WelcomingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // WelcomingPictureBox
-            // 
-            this.WelcomingPictureBox.Image = global::EEPrep.Properties.Resources.EEPrepLogo;
-            this.WelcomingPictureBox.Location = new System.Drawing.Point(160, 91);
-            this.WelcomingPictureBox.Name = "WelcomingPictureBox";
-            this.WelcomingPictureBox.Size = new System.Drawing.Size(310, 200);
-            this.WelcomingPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.WelcomingPictureBox.TabIndex = 2;
-            this.WelcomingPictureBox.TabStop = false;
             // 
             // WelcomingLabel2
             // 
@@ -79,17 +68,6 @@
             this.StudentButton.UseVisualStyleBackColor = true;
             this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
             // 
-            // AdminButton
-            // 
-            this.AdminButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminButton.Location = new System.Drawing.Point(793, 339);
-            this.AdminButton.Name = "AdminButton";
-            this.AdminButton.Size = new System.Drawing.Size(126, 38);
-            this.AdminButton.TabIndex = 6;
-            this.AdminButton.Text = "Admin Login";
-            this.AdminButton.UseVisualStyleBackColor = true;
-            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
-            // 
             // aboutButton
             // 
             this.aboutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,20 +77,31 @@
             this.aboutButton.TabIndex = 7;
             this.aboutButton.Text = "About";
             this.aboutButton.UseVisualStyleBackColor = true;
+            this.aboutButton.Click += new System.EventHandler(this.aboutButton_Click);
+            // 
+            // WelcomingPictureBox
+            // 
+            this.WelcomingPictureBox.Image = global::EEPrep.Properties.Resources.EEPrepLogo;
+            this.WelcomingPictureBox.Location = new System.Drawing.Point(160, 91);
+            this.WelcomingPictureBox.Name = "WelcomingPictureBox";
+            this.WelcomingPictureBox.Size = new System.Drawing.Size(310, 200);
+            this.WelcomingPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.WelcomingPictureBox.TabIndex = 2;
+            this.WelcomingPictureBox.TabStop = false;
             // 
             // WelcomingScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(966, 510);
             this.Controls.Add(this.aboutButton);
-            this.Controls.Add(this.AdminButton);
             this.Controls.Add(this.StudentButton);
             this.Controls.Add(this.WelcomingLabel2);
             this.Controls.Add(this.WelcomingPictureBox);
             this.Controls.Add(this.WelcomingLabel);
             this.Name = "WelcomingScreen";
-            this.Text = "WelcomingScreen";
+            this.Text = "Welcome";
             this.Load += new System.EventHandler(this.WelcomingScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.WelcomingPictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -126,7 +115,6 @@
         private System.Windows.Forms.PictureBox WelcomingPictureBox;
         private System.Windows.Forms.Label WelcomingLabel2;
         private System.Windows.Forms.Button StudentButton;
-        private System.Windows.Forms.Button AdminButton;
         private System.Windows.Forms.Button aboutButton;
     }
 }
