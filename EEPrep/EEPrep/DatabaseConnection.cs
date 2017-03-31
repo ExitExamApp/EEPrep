@@ -1,38 +1,73 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using Microsoft.SqlServer.Management.Smo;
 using Microsoft.SqlServer.Management.Common;
 
 namespace EEPrep
 {
-    public class DatabaseConnection
+    public class DatabaseConnection 
     {
+        //private string connectionString = "server = Reph;" + "user id = admin;" +
+          //                              "persistsecurityinfo=True;" + "database=examdb";
+        private ConnectionState connState;
+        private String currentDB;
+        private String connectionString;
+        // sql connection
+        private SqlConnection conn;
+
+        public DatabaseConnection()
+        {
+        }
+
+        public DatabaseConnection(string providerName)
+        {
+            connState = ConnectionState.Closed;
+            //Configuration Manager
+            ConnectionStringSettingsCollection connStrings = ConfigurationManager.ConnectionStrings;
+
+            if (connStrings != null)
+            {
+                // search for provider name that matches this nametype
+                foreach (ConnectionStringSettings connString in connStrings)
+                {
+                    if (connString.ProviderName == providerName)
+                    {
+                        connectionString = connString.ConnectionString;
+                        break;
+                    }
+                }
+            }
+            // create the connection
+            conn = new SqlConnection(this.connectionString);
+        }
+
+        public void OpenConnection()
+        {
+            conn.Open();
+            // TODO(reph): check the state, add code to close, create command
+             
+        }
         public static void MakeConnection()
         {
 
-        /*private ConnectionState state;
+        }
 
-        private string connectionString = "Server = Reph;" +
-                                          "Database = ExitExam;" +
-                                          "Uid = root;" + "Pwd = bre@d&Chee3e";
+        //Purpose: Creates an instance of a command object
+        //Requires: nothing
+        //Returns: an instance of a command object
+        public IDbCommand CreateCommand()
+        {
+            IDbCommand result = new SqlCommand();
+            result.Connection = conn;
+            return result;
+        }
+         
 
-        private SqlConnection conn = new SqlConnection(connectionString);
-        */
-        
-            String sqlServerLogin = "root";
-                        String password = "bre@d&Chee3e";
-                        String instanceName = "instance_name";
-                        String remoteSvrName = "";
-
-        // Connecting to an instance of SQL Server using SQL Server Authentication  
-        Server srv1 = new Server(); // connects to default instance  
-                 srv1.ConnectionContext.LoginSecure = true; // set to true for Windows Authentication  
-                 srv1.ConnectionContext.Login = sqlServerLogin;
-                 srv1.ConnectionContext.Password = password;
-                 Console.WriteLine(srv1.Information.Version); // connection is established  
-    }
-      }
+          
+     }
+ }
     
-}

@@ -48,7 +48,7 @@
             // 
             this.quesCorrLabel.AutoSize = true;
             this.quesCorrLabel.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quesCorrLabel.Location = new System.Drawing.Point(195, 141);
+            this.quesCorrLabel.Location = new System.Drawing.Point(195, 148);
             this.quesCorrLabel.Name = "quesCorrLabel";
             this.quesCorrLabel.Size = new System.Drawing.Size(255, 23);
             this.quesCorrLabel.TabIndex = 1;

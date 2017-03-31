@@ -21,7 +21,8 @@ namespace EEPrep
 
         private void WelcomingScreen_Load(object sender, EventArgs e)
         {
-            DatabaseConnection db = new DatabaseConnection();
+            DatabaseConnection db = new DatabaseConnection("EEPrep.DatabaseConnection");
+            
         } 
 
         private void StudentButton_Click(object sender, EventArgs e)
@@ -30,12 +31,7 @@ namespace EEPrep
             StudentLogin.Show();
         }
 
-        private void AdminButton_Click(object sender, EventArgs e)
-        {
-            AdminLoginForm AdminLogin = new AdminLoginForm();
-            AdminLogin.Show();
-        }
-
+       
         private void aboutButton_Click(object sender, EventArgs e)
         {
             About_Screen about = new About_Screen();

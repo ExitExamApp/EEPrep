@@ -33,10 +33,12 @@ namespace EEPrep
 
         private void StuLoginNextButton_Click(object sender, EventArgs e)
         {
-            FeedbackForm summary = new FeedbackForm();
-            summary.Show();
-            //CategoryForm options = new CategoryForm();
-            //options.Show();
+           Student person = new Student();
+            
+
+            // ca
+            CategoryForm options = new CategoryForm();
+            options.Show();
         }
     }
 }

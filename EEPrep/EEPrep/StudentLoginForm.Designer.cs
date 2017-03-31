@@ -34,8 +34,7 @@
             this.emailLabel = new System.Windows.Forms.Label();
             this.StuLoginNextButton = new System.Windows.Forms.Button();
             this.atLabel = new System.Windows.Forms.Label();
-            this.domainOptions = new System.Windows.Forms.ComboBox();
-            this.domainSelecInstr = new System.Windows.Forms.Label();
+            this.domainTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // NameTextBox
@@ -47,7 +46,7 @@
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Location = new System.Drawing.Point(330, 222);
+            this.EmailTextBox.Location = new System.Drawing.Point(319, 225);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(182, 20);
             this.EmailTextBox.TabIndex = 1;
@@ -89,29 +88,18 @@
             // 
             this.atLabel.AutoSize = true;
             this.atLabel.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.atLabel.Location = new System.Drawing.Point(530, 223);
+            this.atLabel.Location = new System.Drawing.Point(507, 227);
             this.atLabel.Name = "atLabel";
             this.atLabel.Size = new System.Drawing.Size(24, 18);
             this.atLabel.TabIndex = 5;
             this.atLabel.Text = "@";
             // 
-            // domainOptions
+            // domainTextBox
             // 
-            this.domainOptions.FormattingEnabled = true;
-            this.domainOptions.Location = new System.Drawing.Point(577, 224);
-            this.domainOptions.Name = "domainOptions";
-            this.domainOptions.Size = new System.Drawing.Size(103, 21);
-            this.domainOptions.TabIndex = 6;
-            // 
-            // domainSelecInstr
-            // 
-            this.domainSelecInstr.AutoSize = true;
-            this.domainSelecInstr.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.domainSelecInstr.Location = new System.Drawing.Point(563, 205);
-            this.domainSelecInstr.Name = "domainSelecInstr";
-            this.domainSelecInstr.Size = new System.Drawing.Size(134, 16);
-            this.domainSelecInstr.TabIndex = 7;
-            this.domainSelecInstr.Text = "Select Email Domain";
+            this.domainTextBox.Location = new System.Drawing.Point(537, 225);
+            this.domainTextBox.Name = "domainTextBox";
+            this.domainTextBox.Size = new System.Drawing.Size(146, 20);
+            this.domainTextBox.TabIndex = 8;
             // 
             // StudentLoginForm
             // 
@@ -119,8 +107,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(802, 450);
-            this.Controls.Add(this.domainSelecInstr);
-            this.Controls.Add(this.domainOptions);
+            this.Controls.Add(this.domainTextBox);
             this.Controls.Add(this.atLabel);
             this.Controls.Add(this.StuLoginNextButton);
             this.Controls.Add(this.emailLabel);
@@ -142,8 +129,7 @@
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Button StuLoginNextButton;
         private System.Windows.Forms.Label atLabel;
-        private System.Windows.Forms.ComboBox domainOptions;
-        private System.Windows.Forms.Label domainSelecInstr;
+        private System.Windows.Forms.TextBox domainTextBox;
     }
 }
 
