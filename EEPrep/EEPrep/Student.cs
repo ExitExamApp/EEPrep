@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EEPrep
 {
-    class Student
+    public class Student
     {
         private string email { set; get; }
         private string name { set; get; }

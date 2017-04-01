@@ -15,6 +15,21 @@ namespace EEPrep
 
         //Variable Declarations
         bool login;
+        private Student student;
+
+        public Student Student
+        {
+            get
+            {
+                if (object.ReferenceEquals(student, null))
+                {
+                   student = new Student();
+                }
+                return student;
+            }
+            set { student = value; }
+
+        }
 
         public StudentLoginForm()
         {
