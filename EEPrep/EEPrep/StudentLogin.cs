@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +10,35 @@ using System.Windows.Forms;
 
 namespace EEPrep
 {
-    public partial class StudentLogin : Form
+    public partial class StudentLoginForm : Form
     {
-        public StudentLogin()
+
+        //Variable Declarations
+        bool login = false;
+
+
+        public StudentLoginForm()
         {
+        
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void StuLoginNextButton_Click(object sender, EventArgs e)
         {
-
+            login = true;
+            this.Close();
+        }
+        public string GetName()
+        {
+            return NameTextBox.Text;
+        }
+        public string GetEmail()
+        {
+            return EmailTextBox.Text + domainTextBox.Text;
+        }
+        public bool showcat()
+        {
+            return login;
         }
     }
 }
